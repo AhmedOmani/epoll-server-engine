@@ -14,7 +14,7 @@ This project was built to understand the raw mechanics of high-performance, even
 ## Benchmark
 In local testing using `autocannon` with 100 concurrent connections, this raw engine handled approximately 505,000 requests in 10 seconds (~50,000 req/sec) with an average latency of 1.5ms on a single CPU core.
 
-![Autocannon Benchmark Results](image/benchmark.png)
+![Autocannon Benchmark Results](image/benchmark.jpg)
 
 ## Usage
 Compile the server using g++:

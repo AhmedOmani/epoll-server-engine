@@ -12,7 +12,7 @@ This project was built to understand the raw mechanics of high-performance, even
 * **Graceful Teardown:** Handles sudden client disconnects safely by ignoring `SIGPIPE` signals with `MSG_NOSIGNAL`, preventing fatal application crashes.
 
 ## Benchmark
-In local testing using `autocannon` with 100 concurrent connections, this raw engine handled approximately 505,000 requests in 10 seconds (~50,000 req/sec) with an average latency of 1.5ms on a single CPU core.
+In local testing using `autocannon` with 100 concurrent connections, this raw engine handled approximately 872,000 requests in 11 seconds (~80,000 req/sec) with an average latency of 0.01ms on a single CPU core.
 
 ![Autocannon Benchmark Results](image/benchmark.jpg)
 

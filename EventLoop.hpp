@@ -1,4 +1,5 @@
 #pragma once
+#include "EventHandler.hpp"
 #include <sys/epoll.h>
 #include <vector>
 
@@ -12,6 +13,6 @@ public:
     EventLoop();
     ~EventLoop();
 
-    bool addEvent(int fd , uint32_t events);
+    bool addEvent(EventHandler* handler , uint32_t events);
     int wait(std::vector<epoll_event>& activeEvents);
 };
